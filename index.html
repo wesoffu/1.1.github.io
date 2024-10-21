@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <nav class="container navbar navbar-expand-md mx-auto px-xl-4 px-lg-4 px-md-4 px-1">
+      <div class="container my-0">
+        <a class="navbar-brand d-flex align-self-center" href="#"> <img class="img-fluid imgg" src="/img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav column-gap-2 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link p-1" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-1" href="#project">Project</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link p-1" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-1" href="#accordionExample">FAQ's</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-dark speccontact" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+          <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="contactForm" novalidate>
+                    <div class="mb-xl-3 mb-lg-3 mb-md-3 mb-1">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstName" required>
+                      <div class="invalid-feedback">
+                        Please enter your first name.
+                      </div>
+                    </div>
+                    <div class="mb-xl-3 mb-lg-3 mb-md-3 mb-1">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" required>
+                      <div class="invalid-feedback">
+                        Please enter your last name.
+                      </div>
+                    </div>
+                    <div class="mb-xl-3 mb-lg-3 mb-md-3 mb-1">
+                      <label for="phoneNumber" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" id="phoneNumber" pattern="^(\+7|8)\d{10}$" required>
+                      <div class="invalid-feedback">
+                        Please enter a valid Russian phone number (e.g., +79991234567 or 89991234567).
+                      </div>
+                    </div>
+                    <div class="mb-xl-3 mb-lg-3 mb-md-3 mb-1">
+                      <p class="speccall"> Our specialists will contact you soon.</p>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary butoc" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary butoc" form="contactForm">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mb-xl-5 mb-lg-4 mb-md-3 pt-xl-5 pt-lg-4 pt-md-3 pt-1 pb-xl-5 pb-lg-3 pb-md-2 pb-2 mx-auto" id="home">
+      <div class="row px-xl-4 px-lg-4 px-md-4 px-1 pt-3 column-gap-xl-5 column-gap-lg-4 colummn-gap-md-4 column-gap-0">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-4">
+          <p class="numhead">Capital raised</p>
+          <p class="num">$3.5M+</p>
+          <p class="numdesc">Crafted for your comfort, to enhance the beauty of your present lifestyle but also paves the way for a more aesthetically pleasing and harmonious future for both you and your cherished family.</p>
+        </div>
+        <h1 class="col-8">We craft the
+          future dwelling.</h1>
+      </div>
+      <div class="row px-xl-4 px-lg-4 px-md-4 px-1 pe-xl-3 pe-lg-3 pe-md-0 column-gap-xl-5 column-gap-lg-4 colummn-gap-md-4 column-gap-0">
+        <p class="col-xl-2 col-lg-2 col-md-2 col-3 numplus align-self-end">A vision for liveable, sustainable & affordable.</p>
+        <img src="/img/firstimg.png" alt="firstimg" class="img-fluid col-9 ms-auto">
+      </div>
+    </div>
+
+    <div class="container px-1 mb-xl-5 mb-lg-4 mb-md-3" id="project">
+      <div class="row">
+        <img src="/img/secondimg.png" class="img-fluid col-3 px-0 me-xl-5 me-lg-0 me-md-0" alt="secondimg">
+        <div class="col-6 ps-xl-5 ps-md-0 ms-xl-5 ms-lg-5 ms-md-5 ms-xs-5 align-self-center">
+          <h3>We can bring to life everything you've ever envisioned and dreamed of – your ideals and desires are our creations.</h3>
+          <p class="numdesc mt-xl-4">Our purpose is to transform your wildest dreams into reality. Regardless of how unconventional your vision may be, we possess the capability to craft your dream 
+          home, fulfilling your every desire.</p>
+        </div>
+        <div class="col-2 mt-xl-5 pt-xl-3 pt-md-4 pt-3 pe-xl-3 pe-lg-3 pe-md-0 ms-xl-1 ms-lg-1 ms-md-1 ms-0">
+          <p class="numhead">Satisfied Clients</p>
+          <p class="num">8.4M+</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-xl-5 mb-lg-4 mb-md-3 pt-xl-5 pt-lg-4 pt-md-3 pt-1 pb-xl-5 pb-lg-3 pb-md-2 pb-2 mx-auto">
+      <div id="carouselExampleControlsNoTouching" class="carousel slide mb-0 pt-4 pb-0 px-0" data-bs-touch="false" data-bs-interval="false">
+        <div class="row px-xl-4 px-lg-4 px-md-4 px-1 pt-lg-3 pt-md-0">
+          <h2 class="col-8">What our customers say</h2>
+        </div>
+        <div class="carousel-inner row mx-auto mt-xl-4 mt-lg-4 mt-md-1">
+          <div class="carousel-item active">
+            <div class="container row column-gap-2 px-xl-4 px-lg-4 px-md-4 px-1">
+              <div class="review col bg-white pt-xl-5 pt-lg-4 pt-md-4 pt-3 pb-xl-3 pb-lg-2 px-xl-5 px-lg-4 px-md-4 px-3">
+                <p class="custom">They make it super easy and safe to find a room for rent, prioritizing both convenience and safety. The customer support team is exceptionally responsive and genuinely helpful, ensuring a smooth experience. I wholeheartedly endorse this platform. </p>
+                <p class="text-end custom"><strong>Ashley Cooper</strong></p>
+              </div>
+              <div class="review col bg-white pt-xl-5 pt-lg-4 pt-md-4 pb-xl-3 pb-lg-2 px-xl-5 px-lg-4 px-md-4 d-none d-xl-block d-lg-block d-md-block">
+                <p class="custom">They make it super easy and safe to find a room for rent, prioritizing both convenience and safety. The customer support team is exceptionally responsive and genuinely helpful, ensuring a smooth experience. I wholeheartedly endorse this platform. </p>
+                <p class="text-end custom"><strong>Sarah Corroy</strong></p>
+              </div>
+              <div class="review col bg-white pt-xl-5 pt-lg-4 pb-xl-3 pb-lg-2 px-xl-5 px-lg-4 px-md-4 d-none d-lg-block d-xl-block">
+                <p class="custom">They make it super easy and safe to find a room for rent, prioritizing both convenience and safety. The customer support team is exceptionally responsive and genuinely helpful, ensuring a smooth experience. I wholeheartedly endorse this platform. </p>
+                <p class="text-end custom"><strong>Fredric Backman</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container row column-gap-2 px-xl-4 px-lg-4 px-md-4 px-1">
+              <div class="review col bg-white pt-xl-5 pt-lg-4 pt-md-4 pt-3 pb-xl-3 pb-lg-2 px-xl-5 px-lg-4 px-md-4 px-3">
+                <p class="custom">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quod animi perspiciatis dignissimos molestiae obcaecati, amet dolorem harum itaque excepturi eius quaerat sed sint! Ducimus officiis suscipit itaque dolorem perferendis. </p>
+                <p class="text-end custom"><strong>Kevin Bolfrod</strong></p>
+              </div>
+              <div class="review col bg-white pt-xl-5 pt-lg-4 pt-md-4 pb-xl-3 pb-lg-2 px-xl-5 px-lg-4 px-md-4 d-none d-xl-block d-lg-block d-md-block">
+                <p class="custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia ullam velit atque libero placeat similique aspernatur dolor voluptas, totam maiores praesentium possimus repellendus est. Quibusdam totam minus asperiores dolores.  </p>
+                <p class="text-end custom"><strong>Sofia Bessonova</strong></p>
+              </div>
+              <div class="review col bg-white pt-xl-5 pt-lg-4 pb-xl-3 pb-lg-2 px-xl-5 px-lg-4 px-md-4 d-none d-lg-block d-xl-block">
+                <p class="custom">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptate excepturi, ab modi perspiciatis repellat nulla beatae voluptatem saepe eius cupiditate atque quaerat asperiores, fugit a ad! Eos, reiciendis excepturi. </p>
+                <p class="text-end custom"><strong>Koul Klowu</strong></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon me-auto align-self-center" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon ms-auto align-self-center" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-xl-5 mb-lg-4 mb-md-3 pt-xl-5 pt-lg-4 pt-md-3 pt-0 pb-xl-4 pb-lg-3 pb-md-2 pb-1 mx-auto" id="aboutus">
+      <div class="row px-xl-4 px-lg-4 px-md-4 px-1 pt-lg-3 pt-md-0">
+        <h2 class="col-6 serviceh2">
+          <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, illum.">Services</a>
+        </h2>
+      </div>
+      <div class="container mt-xl-5 mt-lg-4 mt-md-3 mt-2 px-xl-5 px-lg-4 px-md-3">
+        <div class="row column-gap-xl-3 column-gap-lg-2 column-gap-2 row-gap-xl-3 row-gap-lg-2 row-gap-2 mx-auto">
+          <div class="servicecol col-xl col-lg col-md col speccol pt-xl-4 pt-lg-4 pt-md-4 pb-xl-3 pb-lg-3 pb-md-4 px-xl-5 px-lg-5 px-md-4 text-white">
+            <p class="servicehead text-end mt-xl-4 mt-lg-3 mb-xl-5 mb-lg-4 mb-md-4 mb-0">01</p>
+            <p class="servicehead w-50 pt-xl-4 pt-lg-0 mt-1 mb-2">Furniture
+              Design</p>
+            <p class="servicetext w-75 mb-xl-5 mb-lg-1 mb-md-0 mt-xl-4 mt-lg-4 mt-md-3">The design of furniture holds substantial influence over the aesthetics, ambiance, and usability of an area, exerting a profound effect on our everyday experiences.</p>
+          </div>
+
+          <div class="servicecol col-xl col-lg col-md col bg-white pt-xl-4 pt-lg-4 pt-md-4 pb-xl-3 pb-lg-3 pb-md-4 px-xl-5 px-lg-5 px-md-4">
+            <p class="servicehead text-end mt-xl-4 mt-lg-3 mb-xl-5 mb-lg-4 mb-md-4 mb-0">02</p>
+            <p class="servicehead w-50 pt-xl-4 pt-lg-0 mt-1 mb-2">Interior 
+              Details</p>
+            <p class="servicetext w-75 mb-xl-5 mb-lg-1 mb-md-0 mt-xl-4 mt-lg-4 mt-md-3">Incorporating interior detailing introduces dimension, tactile qualities, and captivating visual elements to a room, enhancing the overall design through the addition of those final.</p>
+          </div>
+
+          <div class="servicecol col-xl col-lg col-md-12 col-12 bg-white pt-xl-4 pt-lg-4 pt-md-4 pb-xl-3 pb-lg-3 pb-md-4 px-xl-5 px-lg-5 px-md-4">
+            <p class="servicehead text-end mt-xl-4 mt-lg-3 mb-xl-5 mb-lg-4 mb-md-1 mb-0">03</p>
+            <p class="servicehead w-50 pt-xl-4 pt-lg-0 mt-0 mb-2">Home
+              Revamping </p>
+            <p class="servicetext w-75 mb-xl-5 mb-lg-1 mb-md-0 mt-xl-4 mt-lg-4 mt-md-3">The design of furniture holds substantial influence over the aesthetics, ambiance, and usability of an area, exerting a profound effect on our everyday experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container accordion p-xl-5 p-lg-5 p-md-4 p-3" id="accordionExample">
+      <div class="accordion-item mb-xl-3 mb-lg-3 mb-md-3 mb-2 w-75">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed py-xl-3 py-lg-3 py-md-3 py-1 custom1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Why do your customers choose you and what is your the best feature in projects?
+          </button>
+        </p>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body custom">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea id exercitationem aliquam sit blanditiis molestiae aut consectetur! Molestias laudantium reiciendis quisquam libero nihil necessitatibus sequi quibusdam, corporis debitis nemo. Nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ad explicabo numquam, impedit ex ab.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-xl-3 mb-lg-3 mb-md-3 mb-2 w-75">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed py-xl-3 py-lg-3 py-md-3 py-1 custom1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can you give guarantee to your customers, if I won’t like the result?
+          </button>
+        </p>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body custom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam libero ullam quos alias! Maxime, iure voluptates natus inventore provident quo cum ratione architecto sit? Molestias unde temporibus qui fugit consectetur.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item w-75">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed py-xl-3 py-lg-3 py-md-3 py-1 custom1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How can I pay for my personal project, can I do it offline?
+          </button>
+        </p>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body custom">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptate neque corporis dignissimos. Illo cum minus aliquam. Labore ea placeat, temporibus, culpa nobis similique aspernatur modi recusandae iure eveniet eaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere voluptate voluptas fugit deleniti reiciendis ullam omnis, quo libero itaque.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+    <script>
+      (function () {
+        'use strict'
+
+        var form = document.getElementById('contactForm')
+
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })()
+    </script>
+  </body>
+</html>
